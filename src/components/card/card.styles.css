@@ -2,5 +2,21 @@
   background-color: #95dada;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 25px;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform .5s ease-in-out;
+  flex: 0 calc(33.333333% - 42px);
+  min-width: calc(33.333333% - 42px);
+  margin: 0 10px 20px 10px;
+}
+.card-container > h2, .card-container > p {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-container:hover {
+  transform: scale(1.025);
+  cursor: pointer;
 }
